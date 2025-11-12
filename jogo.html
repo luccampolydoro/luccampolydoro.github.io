@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jogo da Abelha — Lucca Machado Polydoro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body id="pagina">
+
+  <!-- Menu lateral (mesmo da index) -->
+  <div id="mySidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html#dados-pessoais">Dados Pessoais</a>
+    <a href="index.html#formacao">Formação</a>
+    <a href="index.html#conhecimentos">Conhecimentos</a>
+    <a href="index.html#habilidades">Habilidades</a>
+    <a href="index.html#qualificações">Qualificações</a>
+    <a href="index.html#idiomas">Idiomas</a>
+  </div>
+
+  <!-- Conteúdo principal -->
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Abrir Menu</button>
+
+    <header id="cabecalho">
+      <h1>Jogo da Abelha</h1>
+    </header>
+
+    <section class="secao" style="display:flex;justify-content:center;">
+      <canvas id="canvas" width="900" height="720" style="max-width:100%;border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,0.2)"></canvas>
+    </section>
+  </div>
+
+  <footer id="rodape">
+    <p>&copy; 2025 Lucca Machado Polydoro - Todos os direitos reservados.</p>
+    <div class="botoes">
+      <button onclick="mudarFonte('Roboto')">Roboto</button>
+      <button onclick="mudarFonte('Lobster')">Lobster</button>
+      <button onclick="mudarFonte('Montserrat')">Montserrat</button>
+    </div>
+  </footer>
+
+  <!-- Reaproveita o JS da index (menu/fonte/guardas) -->
+  <script src="javascript/javascript.js"></script>
+
+  <!-- Scripts do jogo -->
+  <!-- IMPORTANTE: mantenha a mesma ordem/paths que você já usa -->
+  <script src="javascript/avulso.js"></script>  <!-- (onde estão as classes Obj, Abelha, etc) -->
+  <script src="javascript/jogo.js"></script>    <!-- (loop, assets e lógica do jogo) -->
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>     Lucca Machado Polydoro    </title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&family=Montserrat&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/estilo.css" />
+</head>
+<body id="pagina">
+
+  <!-- Menu lateral -->
+  <div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#dados-pessoais">Dados Pessoais</a>
+  <a href="#formacao">Formação</a>
+  <a href="#conhecimentos">Conhecimentos</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#idiomas">Idiomas</a>
+</div>
+
+  <!-- Conteúdo principal -->
+  <div id="main">
+    <button class="openbtn" onclick="openNav()">&#9776; Abrir Menu</button>
+
+    <header id="cabecalho">
+      <h1>Currículo Lucca Machado Polydoro </h1>
+    </header>
+
+    <div class="perfil">
+    <img src="imagem/Perfil.png" alt="Foto de Lara Fontes" class="foto-perfil">
+    <p>Estudante do IFPR Campus Curitiba, no último ano do curso programação de jogos digitais, criação de videos no youtube, canal com mais 2,32 mil inscritos e 967 videos postados, com a experiencia em sonorização de videos.</p>
+  </div>
+
+    <section class="secao">
+      <article id="curriculo-conteudo">
+        <h2 id="dados-pessoais">Dados Pessoais</h2>
+        <p><strong>Email:</strong> luccampolydoro@gmail.com </p>
+        <p><strong>Celular:</strong>  (41) 9888-0690   </p>
+		<p><strong>Instagram:</strong>  @luccapolydoro   </p>
+
+        <h2 id="formacao">Formação</h2>
+        <ul>
+          <li> Ensino Médio/Curso Técnico em Jogos Digitais </li>
+          <li> Instituto Federal do Paraná - IFPR Campus Curitiba</li>
+        </ul>
+
+        <h2 id="conhecimentos">Conhecimentos</h2>
+          <ul>
+          <li>   Wondershare Filmora   </li>
+          <li>   Crossover               </li>
+          <li>   Animações </li>
+          <li>   PowerPoint</li>
+          <li>   Paint                    </li>
+          <li>   Donwload os vídeos</li>
+		  <li>   Enviar os vídeos</li>
+		  <li>   Importar</li>
+		  <li>   Novos projetos</li>
+		  <li>   Organizar as pastas  </li>
+		  <li>   Pastas do Backup E</li>
+		  <li>   Ajustar o som</li>
+		  <li>   Cortar o vídeo</li>
+        </ul>
+        </ul>
+
+       <h2 id="habilidades">Habilidades</h2>
+        <ul>
+          <li>   Piano   </li>
+          <li>   Teclado </li>
+          <li>   Cantor  </li>
+        </ul>
+
+        <h2 id="idiomas">Idiomas</h2>
+        <ul>
+
+          <li>Inglês – Avançado</li>
+          <li>Espanhol – Básico</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+  <div class="carrossel-container">
+<h2>Meu Portfólio</h2>
+<div class="carrossel">
+<button class="carrossel-btn" onclick="mudarImagens(-1)">&#10094;</button>
+<div class="carrossel-imagens" id="carrossel-imagens">
+<!-- Imagens serão inseridas via JavaScript -->
+</div>
+<button class="carrossel-btn" onclick="mudarImagens(1)">&#10095;</button>
+</div>
+</div>
+  <footer id="rodape">
+    <p>&copy; 2025  Lucca Machado Polydoro - Todos os direitos reservados.</p>
+    <div class="botoes">
+      <button onclick="mudarFonte('Roboto')">Roboto</button>
+      <button onclick="mudarFonte('Lobster')">Lobster</button>
+      <button onclick="mudarFonte('Montserrat')">Montserrat</button>
+    </div>
+  </footer>
+
+  <script src="javascript/javascript.js"></script>
+</body>
+</html>
